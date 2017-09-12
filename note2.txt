@@ -1,0 +1,563 @@
+123
+
+http://localhost:8080/jiaxinOA/a/login?username=thinkgem&&password=123&&mobileLogin=true
+
+
+{lng: 120.384428, lat: 36.105215}青岛
+{lng: 120.37017, lat: 36.08127}延安三路67号
+192.168.1.165
+
+jdbc:mysql://192.168.1.2:3306/jiaxinoa
+
+HttpSession session = request.getSession(true);
+
+
+http://localhost:8080/jiaxinOA/a/sys/user/treeData?officeId=2
+http://localhost:8080/jiaxinOA/a/sys/office/treeData?officeId=2
+
+<li id="tree_1" cl
+
+
+function getTreeDa
+
+/jiaxinOA/src/main/java/com/thinkgem/jeesite/modules/sys
+/jiaxinOA/src/main/java/com/thinkgem/jeesite/modules/jiaxinoa
+
+http://localhost:8080/jiaxinOA/a/oaWorkLog/formm?id=358a8dc064fc4a9ab77448c45d9d24a4
+
+http://localhost:8080/jiaxinOA/a/oaWorkLog/s?id=358a8dc064fc4a9ab77448c45d9d24a4
+
+6e7c5a83f6e9a3e35242b7835241cb4935ebee3ca65fd9a682ce0f2e
+6ceb90be5df326a73127fea23822d625f6d56b5c784ff4cf722c11ed
+
+		SystemService.validatePassword(user.getPassword(),user2.getPassword());
+
+
+id:
+sqrsm:sss
+sqsj:2017-04-27 13:50:22
+sfty:2
+user.id:0556dd93abdf4d7383f788f8ac25feef
+user.name:dddd
+remarks:三生三世十里桃花
+oaBxChindList[0].id:
+oaBxChindList[0].delFlag:0
+oaBxChindList[0].name:2
+oaBxChindList[0].sl:2
+oaBxChindList[0].dj:111
+oaBxChindList[0].bz:
+oaBxChindList[1].id:
+oaBxChindList[1].delFlag:0
+oaBxChindList[1].name:1
+oaBxChindList[1].sl:3
+oaBxChindList[1].dj:222
+oaBxChindList[1].bz:
+
+
+http://192.168.1.200:8080/jiaxinOA/a/m/saveBx?userId=ae16fb15e1da447fb5f7178031aba737&&title=cbnn&&starttime=2017-04-27%2014:49:40&&oaWorklogRecordId=ghl&&remarks=cbnn&&oaBxChindList=[{id:1,name:2},{id:2,name:3}]
+
+[{"id":0,"name":"5","sl":"50","dj":"500","bz":"5666"},{"id":1,"name":"5","sl":"5","dj":"500","bz":"5556"}]
+--------------------------------2017-5-27----------------------------------------
+//轮播图跳转
+var productIds=[];
+productIds.push(ret[i].productId);
+if(ret.eventType=='click'){
+					var index=ret.index;
+					console.info(index);
+					var productId=productIds[index];
+					console.info(productId);
+					  lookDetail(productId);
+					}
+
+//跳转页面
+function lookDetail(productId) {
+console.info(productId);
+	COMMON_OpenWin({
+		name : 'product_detail',
+		url : 'product_detail.html',
+		pageParam : {
+			productId : productId
+		}
+	});
+}
+
+
+api.sendEvent({
+		name:'updShoppingNum'
+	});
+
+-------------------------------------2017-5-31-------------------------------------
+1:所有的页面都加是否已经到底部标识
+	1：fastorder
+	2:打卡记录
+	3：myalertMessage
+	4:
+2:时间样式
+	overdue、reconlication、oos_add	、month_sale_target
+3:验证客户是否能看到该产品
+http://202.141.242.222:8888/base/appSearchProduct.ajax?pageSize=6&pageNo=0&customerCode=6000110028&from=app&productId=750763
+4：overage
+http://202.141.242.222:8888/base/appGetProductOverage.ajax?pageSize=10&pageNo=0&saleOffice=6625&division=Washing%20Machine&from=app&location=GJTA&model=XQB75-Z918
+5:http://202.141.242.222:8888/base/appListShop.ajax infomation中shop接口数据
+
+-----------------------------2017-6-1-------------------------------------------------
+常用产品添加成功提示
+dialog.alert({
+				title : $.i18n.prop('tip'),
+				msg : $.i18n.prop('addSuccess'),
+				buttons : [$.i18n.prop('ok'), $.i18n.prop('detail')]
+			}, function(ret) {
+				if (ret.buttonIndex == 2) {
+					COMMON_OpenWin({
+						name : 'common_product',
+						url : '../html/common_product.html'
+					});
+				}
+			})
+---------------------------2017-6-2------------------------------------------------------
+列表搜索条件trim
+1:notice、question、issue_list、oos_list、overage、
+
+product_price
+product_discount
+product_market_price
+
+---------------------------2017-6-9-------------------------------------------------------
+
+function COMMON_CacheDoc(url) {
+var filename = COMMON_GetFileNameByUrl(url);
+	var path = "cache://" + filename;
+			api.download({
+				url : url,
+				savePath : path,
+				report : false,
+				cache : true
+			}, function(ret, err) {
+				if (ret) {
+				console.info($api.jsonToStr(ret));
+					if (ret.fileSize == 0) {
+						if(ret.statusCode=='404'){
+							api.toast({
+								msg : 'The file does not exist.'
+							});
+						}
+					} else {
+						filePath = ret.savePath;
+					}
+				}
+			});
+}
+
+
+shipToValue
+shipToText
+shipToId
+
+
+payerValue
+payerText
+payerId
+1：离线订单shipTo、payTo、展示title+code
+
+items : [{
+			title : 'Shop Info',
+			icon : 'widget://image/info_collect/shop2.png',
+			active : 'widget://image/info_collect/shop_selected2.png',
+			highlight : 'widget://image/info_collect/shop_selected2.png'
+		}, {
+			title : 'Rival Product',
+			icon : 'widget://image/info_collect/rival2.png',
+			active : 'widget://image/info_collect/rival_selected2.png',
+			highlight : 'widget://image/info_collect/rival_selected2.png'
+		}],
+------------------------------------2017-06-21--------------------------------------------------
+1:客户缓存
+fastorder
+recon
+question_add
+
+var dialogBox = api.require('dialogBox');
+				dialogBox.alert({
+					texts : {
+						title : $.i18n.prop('submit'),
+						content : $.i18n.prop('submitTip'),
+						leftBtnTitle : $.i18n.prop('cancel'),
+						rightBtnTitle : $.i18n.prop('ok')
+					},
+					styles : {
+						bg : '#fff',
+						corner : 2,
+						w : 300,
+						h : 170,
+						title:{               
+       						 marginT: 20,       
+        					 icon: '',         
+      						 iconSize: 40,     
+        					 titleSize: 14,    
+       						 titleColor: '#555'
+   						},
+						content:{              
+       						 marginT: 20,     
+       						 marginB: 20,      
+      						 color: '#555',   
+       						 size: 12          
+    					},
+						left : {
+							marginL : 10,
+							w : 130,
+							h : 35,
+							corner : 14,
+							bg : '#f1f1f1',
+							size : 14,
+							color : '#555'
+						},
+						right : {
+							marginR : 10,
+							w : 130,
+							h : 35,
+							corner : 14,
+							bg : '#1B7BEA',
+							size : 14,
+							color : '#fff'
+						}
+					}
+				}, function(ret) {
+					if (ret.eventType == 'left') {
+						var dialogBox = api.require('dialogBox');
+						dialogBox.close({
+							dialogName : 'alert'
+						});
+					} else if (ret.eventType == 'right') {
+						var dialogBox = api.require('dialogBox');
+						dialogBox.close({
+							dialogName : 'alert'
+						});
+					}
+				});
+
+2：修改dialogBox
+question_add
+pdc_add
+fast_order删除购物车产品
+issue_list 客户确认公告
+notice_add
+notice_detail
+info_collection
+recon
+
+quanshi_categary
+
+<form:input path="title" htmlEscape="false" maxlength="64" class="input-medium"/>
+
+static/modules/cms/front/themes/weixin/mui/css/mui.min.css
+
+<a href="${ctx}/quanshi/view"><img src="${ctxStatic}/images/10_03.png" style="height: 100%;width: 100%;"/></a>
+
+
+
+
+
+if(fjidList.length>0){
+				var lastImageIndex=fjidList.length-1;
+				var sliderHtml='';
+				$('.mui-slider-item-duplicate').html('<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="'+fjidList[lastImageIndex]+'" /></a></div>');
+				
+				console.info('<img src="'+fjidList[lastImageIndex]+'" />');
+				for(var i=0;i<fjidList.length;i++){
+					sliderHtml=sliderHtml+'<div class="mui-slider-item"><a href="#"><img src="'+fjidList[i]+'" /></a></div>'
+					console.info(fjidList[i]);
+				}
+				$('.mui-slider-item-duplicate').html('<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="'+fjidList[0]+'" /></a></div>');
+				$('#sliderDiv').html(sliderHtml);
+				console.info(sliderHtml);
+			}else{
+				$('#sliderDiv').html('该商家很懒，还没有上传图片');
+			}
+
+数据权限：
+select * from (
+select id ,data_scope from sys_role where id in (select t3.role_id from sys_role_menu t3 where t3.menu_id='72a5c5c6240a4ca6a4a66c2cb49d2fc0')
+) t
+where t.id in (
+select t.role_id as 'juese' from sys_user_role t left join sys_role t2 on t.role_id=t2.id where t.user_id='1'
+)order by t.data_scope
+
+
+				    	  var yyy=ret;
+				    	  console.info(123);
+				    	  if(isListEnd){
+				    		 this.endPullupToRefresh(true);
+				    		 return; 
+				    	  }
+				    	  pageNo=pageNo+1;
+				    	  $.post('${ctx}/quanshi/list2', {
+						    	pageNo: pageNo,
+						       pageSize: pageSize,
+						       categary:categary
+						    }, function(data){
+						    	var listData=data.list;
+						    	if(listData.length<pageSize){
+						    		isListEnd=true;
+						    	}
+						    	if(pageNo>data.pageNo){
+						    		isListEnd=true;
+						    		return;
+						    	}
+						    	for(var i=0;i<listData.length;i++){
+						    		$("#listData").append('<li class="mui-table-view-cell mui-media" style="background-color: white; margin-top: 0.5rem; border-radius: 0.5rem;"><a href="${ctx}/quanshi/detail?id='+listData[i].id+'"><img class="mui-media-object mui-pull-left" style="margin-left: -0.5rem;" src="${ctxStatic}/images/quanshi/1.jpg"/><div class="mui-media-body">'+listData[i].title+'<div style="color: #81615f;font-size: 0.01rem;">'+listData[i].content+'</div><div class="mui-ellipsis" style="color: #F44336;">￥'+listData[i].price+'</div></div></a></li>');
+						    	}
+						    	
+						       var sss=data;
+						    });
+				    	  this.endPullupToRefresh(false);
+
+|192.168.1.60:8088/pjj/userfiles/1/images/fjid/2017/06/u%3D894450985%2C3004900800%26fm%3D26%26gp%3D0.jpg|192.168.1.60:8088/pjj/userfiles/1/images/fjid/2017/06/_BM0-fxmisxu6389291.jpg
+
+|http://192.168.1.60:8088/pjj/userfiles/1/images/fjid/2017/06/u%3D894450985%2C3004900800%26fm%3D26%26gp%3D0.jpg|http://192.168.1.60:8088/pjj/userfiles/1/images/fjid/2017/06/_BM0-fxmisxu6389291.jpg
+
+D:\workspace2\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\pjj\userfiles\1\images\fjid\2017\06
+35.958070
+120.246140
+|http://192.168.1.60:8088/pjj/userfiles/1/images/fjid/2017/06/_BM0-fxmisxu6389291.jpg
+
+
+|http://192.168.1.60:8088/pjj/userfiles/1/images/fjid/2017/06/54fbb2fb43166d22136afc71462309f79052d232.jpg|http://192.168.1.60:8088/pjj/userfiles/1/image
+s/fjid/2017/06/0005W6Hi%20(1).jpg|http://192.168.1.60:8088/pjj/userfiles/1/images/fjid/2017/06/0005W6HI.jpg
+
+$.post('${ctx}/act/task/complete/', {
+		    	taskId: taskId,
+		        "vars.keys": keys,
+		        "vars.values": values,
+		        "vars.types": types
+		    }, function(data) {
+		        top.$.jBox.tip('任务完成');
+		        //location = '${pageContext.request.contextPath}' + data;
+		        location.reload();
+		    });
+
+
+//var ss=getDictList('event_type');
+			var event_type_second='';
+			/* if(eventType=='1'){
+				event_type_second="event_type_2_1"
+				$("#second").html('<form:options items="${fns:getDictList(\' event_type_2_1 \')}" itemLabel="label" itemValue="value" htmlEscape="false"/>');
+			}else{
+				event_type_second="event_type_2_2";
+				$("#second").html('<form:options items="${fns:getDictList(\' event_type_2_2 \')}" itemLabel="label" itemValue="value" htmlEscape="false"/>');
+
+3125
+			} */
+
+
+
+api.confirm({
+		title : 'Tip',
+		msg : 'Are you sure to perform this operation？',
+		buttons : ['OK', 'Cancel']
+	}, function(ret, err) {
+		if (ret.buttonIndex == 1) {
+			
+			
+		}
+	});
+
+
+
+var dialogBox = api.require('dialogBox');
+	dialogBox.alert({
+		texts : {
+			title : $.i18n.prop('tip'),
+			content : $.i18n.prop('deleteTip'),
+			leftBtnTitle : $.i18n.prop('cancel'),
+			rightBtnTitle : $.i18n.prop('ok')
+		},
+		styles : {
+			bg : '#fff',
+			corner : 2,
+			w : 300,
+			h : 170,
+			title : {
+				marginT : 20,
+				icon : '',
+				iconSize : 40,
+				titleSize : 14,
+				titleColor : '#555'
+			},
+			content : {
+				marginT : 20,
+				marginB : 20,
+				color : '#555',
+				size : 12
+			},
+			left : {
+				marginL : 10,
+				w : 130,
+				h : 35,
+				corner : 14,
+				bg : '#f1f1f1',
+				size : 14,
+				color : '#555'
+			},
+			right : {
+				marginR : 10,
+				w : 130,
+				h : 35,
+				corner : 14,
+				bg : '#1B7BEA',
+				size : 14,
+				color : '#fff'
+			}
+		}
+	}, function(ret) {
+		if (ret.eventType == 'left') {
+			var dialogBox = api.require('dialogBox');
+			dialogBox.close({
+				dialogName : 'alert'
+			});
+		} else if (ret.eventType == 'right') {
+			var dialogBox = api.require('dialogBox');
+			dialogBox.close({
+				dialogName : 'alert'
+			});
+		
+		
+		}
+	});
+	e.stopPropagation();
+
+
+C:\Users\Administrator\Downloads
+
+--------------------------------2017-7-24-------------
+1：onchange 
+2：处理记录图片
+
+t_taskdispose_lb
+wangmeng 404
+select count(*) from t_taskfound_lb tf where tf.zt_dm=1 and tf.bs=0 and tf.zjsid='2017071117220130688469'  fzr='yh1043' maxiangwei
+select count(*) from t_document_free tf where tf.guid='2017072408524980816677'
+'2017072408525003772188'
+
+select * from t_attachment t where t.zid='null'
+/oa/attachment/default.do?method=download&mk_dm=attachment&guid=2016101910214699113606
+/oa/attachment/default.do?method=download&mk_dm=attachment&guid=2016111010413364736127
+/oa/attachment/default.do?method=download&mk_dm=attachment&guid=2017072413585610174007
+/oa/attachment/default.do?method=download&mk_dm=attachment&guid=2017072413585789511796
+/oa/attachment/default.do?method=download&mk_dm=attachment&guid=2017072413585905587263
+
+删除数据
+2017040714255924414352
+2017040610553562865925
+2017033011374452368142
+2017033010594526667603
+
+ 
+关于召开全市干部监督工作座谈会的通知 
+http://124.129.32.55:18951/oa/todo/newgongwendaiban/zysw/free_doc_wait.jsp?guid=2017072416431111745407&dbFlag=1
+
+2015112514300202012771
+强制结束的
+2015112514300202012771
+2015112514291376921886
+2015112514274774091727
+2015112514263409923699
+
+
+http://localhost:8088/jeesite/f/policyRegulation/form?id=1da5b802e2154a828795f70cf653b680&&type=1
+
+http://localhost:8088/jeesite/f/policyRegulation/list?type=4 退伍安置
+http://localhost:8088/jeesite/f/policyRegulation/list?type=3 就业创业
+http://localhost:8088/jeesite/f/policyRegulation/list?type=2 教育培训
+http://localhost:8088/jeesite/f/policyRegulation/list?type=1 服务指南
+
+
+<div class="div_right">
+			<div class="current_location current_location_722">
+							<ul>
+								<li class="current_location_2">
+									内容列表
+								</li>
+							</ul>
+			</div>
+			<div class="sublanmu_box sublanmu_box_722">
+				<div class="sublanmu_content sublanmu_content_article">
+
+					<div style="text-align: center;">
+						<h3>${tPolicyRegulation.title}</h3>
+						<h6>${tPolicyRegulation.createDate}</h6>
+						<h5>${tPolicyRegulation.content}</h5>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+<script language="javascript">
+$(document).ready(function() {
+	//$("#name").focus();
+	$("#inputForm").validate({
+		submitHandler: function(form){
+			loading('正在提交，请稍等...');
+			form.submit();
+		},
+		errorContainer: "#messageBox",
+		errorPlacement: function(error, element) {
+			$("#messageBox").text("输入有误，请先更正。");
+			if (element.is(":checkbox")||element.is(":radio")||element.parent().is(".input-append")){
+				error.appendTo(element.parent().parent());
+			} else {
+				error.insertAfter(element);
+			}
+		}
+	});
+});
+
+
+$(function(){
+	var id = '${tPolicyRegulation.id}';
+	if(id==null||id==''){
+		$("input,textarea").attr("readonly","readonly");
+		$("select").attr("disabled", "disabled");
+		$("input:radio").attr("disabled", "disabled");
+	}
+})
+
+
+</script>
+2ea59abff7356194bf90497c039ab772ae87932ed6b88b7708d5a20a
+a990c452d269c3a9c35612998e443891a25d53de86dd8a6f98dd46fa
+
+
+ if (request.getHeader("x-forwarded-for") == null) {  
+        return request.getRemoteAddr();  
+    }  
+return request.getHeader("x-forwarded-for");  
+
+
+
+<%
+	request.setCharacterEncoding("utf-8");
+	Cookie[] cookies = request.getCookies();
+	for(Cookie c : cookies){
+		out.print(java.net.URLDecoder.decode(c.getValue(),"utf-8"));
+		//如果有名为str的cookie值，则是要需找的
+		if(c.getName().equals("curUserName")){
+			String curUserName=java.net.URLDecoder.decode(c.getValue(),"utf-8");
+		}
+		if(c.getName().equals("curUserLoginIp")){
+			String curUserLoginIp=java.net.URLDecoder.decode(c.getValue(),"utf-8");
+		}
+		if(c.getName().equals("curUserLoginDate")){
+			String curUserLoginDate=java.net.URLDecoder.decode(c.getValue(),"utf-8");
+		}
+	}
+%>
+
+<c:set value="${fn:split(tEvent.eventAttachment, '|')}" var="eventAttachments" />
+
+D:\java\apache-tomcat-6.0.44
+附件路径
+D:\workspace2\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\hdmzj
