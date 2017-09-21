@@ -3,7 +3,7 @@
 http://localhost:8080/jiaxinOA/a/login?username=thinkgem&&password=123&&mobileLogin=true
 
 
-{lng: 120.384428, lat: 36.105215}青岛
+{lng: 120.384428, lat: 36.105215}青岛123
 {lng: 120.37017, lat: 36.08127}延安三路67号
 192.168.1.165
 
